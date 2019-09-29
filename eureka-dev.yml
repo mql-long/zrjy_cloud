@@ -10,7 +10,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:${server.port}/eureka
-    register-with-eureka: false
+    registerWithEureka: false
+    fetchRegistry: false
 
 sms:
   IP:111.111.111.111
