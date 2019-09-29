@@ -1,0 +1,21 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: guli_zuul #指定服务名
+eureka:
+  client:
+    serviceUrl: #Eureka客户端与Eureka服务端进行交互的地址
+      defaultZone: http://127.0.0.1:8100/eureka/
+  instance:
+    prefer-ip-address: true
+zuul:
+  routes:
+    guli-statistics:
+      path: /statistics/**
+      serviceId: guli-statistics
+  host:
+    maxTotalConnections: 60000
+    maxPerRouteConnections: 60000
+  semaphore:
+    max-semaphores: 200
