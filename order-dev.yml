@@ -23,7 +23,7 @@ eureka:
       defaultZone: http://127.0.0.1:8100/eureka
     enabled: true
     registerWithEureka: true
-    fetchRegistry: true
+    fetchegistry: true
   instance:
     prefer-ip-address: true
 feign:
