@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   application:
-    name: guli-order
+    name: guli_order
   profiles:
     active: dev
   datasource:
