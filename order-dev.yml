@@ -19,7 +19,7 @@ mybatis-plus:
   mapper-locations: classpath:com/guli/order/mapper/xml/*.xml
 eureka:
   client:
-    service-url:
+    serviceUrl:
       defaultZone: http://127.0.0.1:8100/eureka/
   instance:
     prefer-ip-address: true
