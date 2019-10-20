@@ -23,6 +23,11 @@ eureka:
       defaultZone: http://127.0.0.1:8100/eureka/
   instance:
     prefer-ip-address: true
+zuul:
+  routes:
+    guli-statistics:
+      path: /statistics/**
+      serviceId: guli-statistics
 feign:
   hystrix:
     enabled: true
